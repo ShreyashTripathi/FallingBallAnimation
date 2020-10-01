@@ -68,20 +68,7 @@ public class MyView extends SurfaceView implements SurfaceHolder.Callback,Runnab
 
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction())
-        {
-            case MotionEvent.ACTION_DOWN:
-                moveBallDown();
-                break;
-            case MotionEvent.ACTION_UP:
-                stopBall();
-                break;
-        }
-        invalidate();
-        return true;
-    }
+
 
     public void stopBall() {
         stopThread();

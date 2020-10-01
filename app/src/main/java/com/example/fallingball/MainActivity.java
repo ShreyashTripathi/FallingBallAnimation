@@ -2,11 +2,8 @@ package com.example.fallingball;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.graphics.Canvas;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(new MyView(this));
+
         frameLayout = new FrameLayout(this);
         myView = new MyView(this);
         linearLayout = new LinearLayout(this);
